@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    
+<h1><span>LAB 2</span></h1>
+<h2><span>Intro</span></h2>
+<p><span>In this lab, you will practice basic HTML and CSS by setting up your initial webpages. This lab relies on Lectures from Week 2. You can revisit lectures&rsquo; recordings from Yuja or find slide decks in Modules.&nbsp;</span></p>
+<p><span>The lab will have three parts: a follow-along step-by-step task, a creative task with less cues, and a self-narration.</span></p>
+<p>&nbsp;</p>
+<h2><span>Work in Pairs!</span></h2>
+<p><span>You will work in pairs for this lab. For general details on this, revisit Lab 1.</span></p>
+<p><span>For this lab specifically</span></p>
+<ol>
+    <li aria-level="1"><span>The follow-along task should be done individually! Consult with your partner if something is not working. Help your partner if they are experiencing troubles.</span></li>
+    <li aria-level="1"><span>The creative task could be done in two ways.</span></li>
+    <ol>
+        <li aria-level="2"><span>Individually, while helping each other, as the previous task. Each partner does and submit their own results</span></li>
+        <li aria-level="2"><span>In close collaboration involving pair programming. In this case, you can have shared results. Each of you should have a copy of those results in their ART101 folder. You will need to narrate in a compelling way how your collaboration worked, what were the obstacles and findings. Since there were two people working on the same code, we will expect more details and experimentations and will grade accordingly to those expectations.</span></li>
+    </ol>
+    <li aria-level="1"><span>In any case, each partner submits a PDF to Canvas and makes a self-eval on Canvas beyond the narration.</span></li>
+</ol>
+<p>&nbsp;</p>
+<h2><span>Resources</span></h2>
+<p><span>Our minimalist handbook: <strong><a class="inline_disabled" href="https://docs.google.com/presentation/d/1POJe_L7r_pTcPMcn8iawEPgQhsbMjlIGCBNsBOhA2U0/edit?usp=sharing" target="_blank" rel="noopener">ART101 precious pattern reference deck</a></strong></span></p>
+<p><span>For expanding and solidifying your understanding of HTML and CSS basics, read those resources:</span></p>
+<p><span><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener">https://www.w3schools.com/html/html_intro.asp</a> (HTML Introduction)</span></p>
+<p><span><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank" rel="noopener">https://www.w3schools.com/html/html_basic.asp</a> (HTML Syntax)</span></p>
+<p><span><a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" rel="noopener">https://www.w3schools.com/html/html_elements.asp</a> (HTML tags, elements)</span></p>
+<p><span><a href="https://www.w3schools.com/tags/default.asp" target="_blank" rel="noopener">https://www.w3schools.com/tags/default.asp</a> (The full dictionary of HTML tags for future use)</span></p>
+<p><span><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank" rel="noopener">https://www.w3schools.com/css/css_intro.asp</a> (CSS intro)</span></p>
+<p><span><a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank" rel="noopener">https://www.w3schools.com/css/css_syntax.asp</a> (CSS basic syntax)</span></p>
+<p><span><a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank" rel="noopener">https://www.w3schools.com/css/css_selectors.asp</a> (CSS selectors, so far we are using only the Element Selector)</span></p>
+<p><span><a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener">https://www.w3schools.com/css/default.asp</a> (The vertical menu on the left contains a list of all things we can style with CSS. Explore according to your creative needs!)</span></p>
+<div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <p>&nbsp;</p>
+                        <h2>Task 1. Follow Along: Build Your Homepage</h2>
+                        <p>In this task, you will create the first homepage for your ART101 website.</p>
+                        <p><strong style="color: #9242b4;">Keep testing your page in Chrome after each major step.</strong> This will help you notice exactly what changed, and when something went wrong.</p>
+                        <p><strong style="color: #027634;">Do not forget to save your files after every edit.</strong></p>
+                        <hr />
+                        <h3>1. Open your project in Visual Studio Code</h3>
+                        <p>Open <strong>Visual Studio Code</strong>.</p>
+                        <p>If your <code>ART101</code> folder is not already open:</p>
+                        <ol>
+                            <li>Go to <strong>File &gt; Open Folder</strong></li>
+                            <li>Find your <code>ART101</code> folder</li>
+                            <li>Open it</li>
+                        </ol>
+                        <p><strong>What is happening here:</strong> you are opening your main website project so all files are visible and editable in one place.</p>
+                        <hr />
+                        <h3>2. Check what's inside</h3>
+                        <p>In the VS Code file panel, make sure your project looks roughly like this based on our class activities:</p>
+                        <p><img src="https://canvas.ucsc.edu/courses/92742/files/12544216/preview" alt="image.png" width="204" height="195" data-api-endpoint="https://canvas.ucsc.edu/api/v1/courses/92742/files/12544216" data-api-returntype="File" /></p>
+                        <p><strong>What is happening here:</strong> you are organizing your site before adding content. Good structure makes links and file paths easier to manage.</p>
+                        <hr />
+                        <h3>3. Open or create <code>index.html</code></h3>
+                        <p>In the main <code>ART101</code> folder:</p>
+                        <ul>
+                            <li>open <code>index.html</code> if it already exists</li>
+                            <li>or create a new file named <code>index.html</code> if it does not exist yet</li>
+                        </ul>
+                        <p>If the file contains old practice code, delete it so you can start fresh.</p>
+                        <p><img src="https://canvas.ucsc.edu/courses/92742/files/12544259/preview" alt="image.png" width="524" height="124" data-api-endpoint="https://canvas.ucsc.edu/api/v1/courses/92742/files/12544259" data-api-returntype="File" /></p>
+                        <p><strong>What is happening here:</strong> <code>index.html</code> is the main homepage file of your website. It is usually the first page a browser looks for.</p>
+                        <hr />
+                        <h3>4. Add the starter HTML template</h3>
+                        <p>Copy and paste this code into <code>index.html</code>:</p>
+                        <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Ilia's ART101 Homepage&lt;/title&gt;
+    &lt;link href="site.css" rel="stylesheet" type="text/css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- All visible page content goes between &lt;body&gt; and &lt;/body&gt; --&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        <p>Then save the file.</p>
+                        <p><strong>What is happening here:</strong></p>
+                        <ul>
+                            <li><code>&lt;!doctype html&gt;</code> tells the browser this is an HTML5 document</li>
+                            <li><code>&lt;html&gt;</code> wraps the whole page</li>
+                            <li><code>&lt;head&gt;</code> stores page information for the browser</li>
+                            <li><code>&lt;title&gt;</code> sets the text shown on the browser tab <span style="color: #027634;">(change it it your own!)</span></li>
+                            <li><code>&lt;link&gt;</code> connects your HTML file to <code>site.css</code> we will create later</li>
+                            <li><code>&lt;body&gt;</code> contains everything visible on the page</li>
+                        </ul>
+                        <hr />
+                        <h3>5. Add a main heading with <code>&lt;h1&gt;</code></h3>
+                        <p>Inside the <code>&lt;body&gt; ... &lt;/body&gt;</code> area, add:</p>
+                        <pre><code>&lt;h1&gt;This is Ilia's ART101 website homepage&lt;/h1&gt;</code></pre>
+                        <p>Change the text to your own version.</p>
+                        <p>For example:</p>
+                        <pre><code>&lt;h1&gt;Maya's brilliant website homepage&lt;/h1&gt;</code></pre>
+                        <p><strong>What is happening here:</strong> <code>&lt;h1&gt;</code> creates the main heading of the page. It is usually the biggest and most important title.</p>
+                        <hr />
+                        <h3>6. Add a subheading with <code>&lt;h2&gt;</code></h3>
+                        <p>Below your <code>&lt;h1&gt;</code>, add:</p>
+                        <pre><code>&lt;h2&gt;Welcome folks!&lt;/h2&gt;</code></pre>
+                        <p><strong>What is happening here:</strong> <code>&lt;h2&gt;</code> creates a second-level heading and starts a new section of the page.</p>
+                        <hr />
+                        <h3>7. Add a paragraph about yourself</h3>
+                        <p>Below the <code>&lt;h2&gt;</code>, add a paragraph:</p>
+                        <pre><code>&lt;p&gt;
+    Several sentences about me... You can use your Discord intro or write something new.
+&lt;/p&gt;</code></pre>
+                        <p>Replace the placeholder text with your own writing.</p>
+                        <p><strong>What is happening here:</strong> <code>&lt;p&gt;</code> creates a paragraph of regular text.</p>
+                        <hr />
+                        <h3>8. Add another subheading and an image</h3>
+                        <p>Add another section heading:</p>
+                        <pre><code>&lt;h2&gt;This is totally me:&lt;/h2&gt;</code></pre>
+                        <p>Then add an image below it:</p>
+                        <pre><code>&lt;img src="mememe.png"&gt;</code></pre>
+                        <p><span style="color: #9242b4;">Now complete these steps carefully:</span></p>
+                        <ol>
+                            <li>Choose an image of yourself, or any image you want to use.</li>
+                            <li>Copy that image file into your main <code>ART101</code> folder. Or <a class="inline_disabled" href="https://www.youtube.com/watch?v=lndJQaUFVyA" target="_blank" rel="noopener">download</a> it to <code>ART101</code> folder if it's online.</li>
+                            <li>Rename the image if needed so the file name is all lowercase and has no spaces.</li>
+                            <li>Replace <code>mememe.png</code> in the <code>src="..."</code> attribute with your actual file name.</li>
+                        </ol>
+                        <p>For example, if your image file is named <code>myphoto.jpg</code>, write:</p>
+                        <pre><code>&lt;img src="myphoto.jpg"&gt;</code></pre>
+                        <p><strong>What is happening here:</strong> the <code>&lt;img&gt;</code> tag places an image on the page. The <code>src</code> attribute tells the browser which file to load.</p>
+                        <p><strong>Common problem:</strong> if the image does not appear, the file name in <code>src="..."</code> probably does not exactly match the real file name, or the image file does not sit directly in ART101 folder.</p>
+                        <hr />
+                        <h3>9. Add another subheading and an ordered list</h3>
+                        <p>Add a new heading:</p>
+                        <pre><code>&lt;h2&gt;These are my exercises and environs:&lt;/h2&gt;</code></pre>
+                        <p>Then add this list below it:</p>
+                        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Links to my follow-along exercises&lt;/li&gt;<br />    &lt;li&gt;&lt;a href="/exercises/ex01.html"&gt;Exercise 1&lt;/a&gt;&lt;/li&gt;<br /> &nbsp; &nbsp;&lt;li&gt;Links to iterations of my creative sandbox&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/environ/en01.html"&gt;Environ 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        <p><strong>What is happening here:</strong></p>
+                        <ul>
+                            <li><code>&lt;ol&gt;</code> creates an ordered list</li>
+                            <li><code>&lt;li&gt;</code> creates each list item</li>
+                            <li><code>&lt;a&gt;</code> creates a link</li>
+                            <li><code>href</code> tells the link where to go</li>
+                        </ul>
+                        <p>You can change the text of the list items to match your own project.</p>
+                        <hr />
+                        <h3>10. Review your full <code>index.html</code></h3>
+                        <p>At this point, your file should look something like this:</p>
+                        <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Ilia's ART101 Homepage&lt;/title&gt;
+    &lt;link href="site.css" rel="stylesheet" type="text/css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;This is Ilia's ART101 website homepage&lt;/h1&gt;
+    &lt;h2&gt;Welcome!&lt;/h2&gt;
+
+    &lt;p&gt;
+        Several sentences about me... You can use your Discord intro or write something new.
+    &lt;/p&gt;
+
+    &lt;h2&gt;This is totally me&lt;/h2&gt;
+    &lt;img src="mememe.png"&gt;
+
+    &lt;h2&gt;These are my exercises and environs:&lt;/h2&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Links to my follow-along exercises&lt;/li&gt;
+        &lt;li&gt;Links to iterations of my creative sandbox&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/environ/en01.html"&gt;Environ 1&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        <p>Save the file.</p>
+                        <p>Then open <code>index.html</code> in Chrome and check that:</p>
+                        <ul>
+                            <li>text appears</li>
+                            <li>headings appear at different sizes</li>
+                            <li>the image loads</li>
+                            <li>the list appears</li>
+                            <li>the link looks clickable</li>
+                        </ul>
+                        <p><strong>What is happening here:</strong> you are testing your HTML before adding CSS. This helps you separate content problems from styling problems.</p>
+                        <hr />
+                        <h3>11. Create and open <code>site.css</code></h3>
+                        <p>In the main <code>ART101</code> folder, create a file named <code>site.css</code> if it does not already exist.</p>
+                        <p>Open it in VS Code.</p>
+                        <p><strong>What is happening here:</strong> <code>site.css</code> is your stylesheet already linked from <code>index.html</code> head section. It controls how the HTML page looks.</p>
+                        <hr />
+                        <h3>12. Style the <code>&lt;body&gt;</code></h3>
+                        <p>Add this code to <code>site.css</code>:</p>
+                        <pre><code>body {
+    background: #e1f3f1;
+    padding: 50px;
+}</code></pre>
+                        <p>Save the file, then refresh Chrome.</p>
+                        <p><strong>What is happening here:</strong></p>
+                        <ul>
+                            <li><code>body</code> targets the whole visible page</li>
+                            <li><code>background</code> changes the background color</li>
+                            <li><code>padding</code> adds inner space around the content</li>
+                        </ul>
+                        <p>You are encouraged to modify the values and experiment.</p>
+                        <hr />
+                        <h3>13. Style the headings</h3>
+                        <p>Below the previous code, add:</p>
+                        <pre><code>h1,
+h2,
+h3 {
+    color: #1d1184;
+    font-family: sans-serif;
+}</code></pre>
+                        <p>Save the file, then refresh Chrome again.</p>
+                        <p><strong>What is happening here:</strong></p>
+                        <ul>
+                            <li><code>h1, h2, h3</code> means these styles apply to all three heading types</li>
+                            <li><code>color</code> changes the text color</li>
+                            <li><code>font-family</code> changes the typeface</li>
+                        </ul>
+                        <hr />
+                        <h3>14. Style the image</h3>
+                        <p>Below that, add:</p>
+                        <pre><code>img {
+    width: 200px;
+}</code></pre>
+                        <p>Save and refresh Chrome.</p>
+                        <p><strong>What is happening here:</strong> this CSS rule makes all images on the page display at <code>200px</code> wide.</p>
+                        <hr />
+                        <h3>15. Final check</h3>
+                        <p>Your page should now have:</p>
+                        <ul>
+                            <li>a background color</li>
+                            <li>space around the content</li>
+                            <li>styled headings</li>
+                            <li>a smaller image</li>
+                            <li>organized sections</li>
+                        </ul>
+                        <p>Something like this:</p>
+                        <p><img src="https://canvas.ucsc.edu/courses/92742/files/12544267/preview" alt="image.png" width="351" height="333" data-api-endpoint="https://canvas.ucsc.edu/api/v1/courses/92742/files/12544267" data-api-returntype="File" /></p>
+                        <p>If something looks wrong, check these first:</p>
+                        <ul>
+                            <li>Did you save both <code>index.html</code> and <code>site.css</code>?</li>
+                            <li>Is <code>site.css</code> spelled correctly in both the file name and the <code>&lt;link&gt;</code> tag?</li>
+                            <li>Is the image file name correct?</li>
+                            <li>Is all page content inside <code>&lt;body&gt; ... &lt;/body&gt;</code>?</li>
+                            <li>Did you refresh Chrome?</li>
+                        </ul>
+                        <hr />
+                        <p><strong style="color: #027634; background-color: #bfedd2;">WHAT TO SUBMIT</strong></p>
+                        <ol>
+                            <li>Take a screenshot of your VS Code workspace with <code>index.html</code> open and your code visible. Add this screenshot to your PDF.</li>
+                            <li>Take a screenshot of your VS Code workspace with <code>site.css</code> open and your code visible. Add this screenshot to your PDF.</li>
+                            <li>Take a screenshot of your final page in Chrome. Add this screenshot to your PDF.</li>
+                        </ol>
+                        <p>&nbsp;</p>
+                        <h2><span>Task 2. Initiating the Environment</span></h2>
+                        <div><span>This task initiates a series of your creative/programming experiments. There will be only general cues without details in order to give you space for experimenting, playing, breaking things, fixing them while finding new tricks in the process. That's how real programming and creation should works like. Check the rubric: for this task you will not be hardly penalized if something is not working fully or acts weirdly. The main point of this task is your self-guidance and project thinking.<br /><br /><strong>1. Think of what Environment you want to play with</strong> in this series of tasks during the whole course, It could be: a rainforest, a pokemon universe, yet another star wars spin-off,&nbsp; the UCSC campus, an abstract Crystallic dimension, you inner world, a horror story, etc.<br /><br />Brainstorm, make doodles. Or just pick the first word that will come into your head.<br /><strong>The main point&mdash;this environment should inspire you, make you feel engaged and thrilled.</strong><br /><br /></span></div>
+                        <div><span><strong>1. Create "env01.html" file</strong> inside "environ" folder of ART101 folder.<br /><br /><strong>2. Create "env.css" file</strong> in the same folder.<br /><br /><strong>3. Use those files</strong> for html and css accordingly in order<strong> to make a webpage</strong> with:</span></div>
+                        <div><span><strong>4. A background</strong> that will set a mood of your environment. It could be a color or an image. Try to apply this background to "body" html tag for immersive feeling. <em>For example, a deep green color or an actual image of trees for the rainforest environment.&nbsp;</em></span></div>
+                        <div><strong>5. A paragraph of text</strong> that will introduce visitors to this environment. Make it narrational, "A long time ago in a galaxy far, far away.&hellip;", you know it.<br /><br /><strong>6. Add the first character or object.</strong> Use &lt;<strong>img&gt; </strong>HTML tag to do so, make it an image.</div>
+                        <div>
+                            <div><strong><span style="color: #027634;">WHAT TO SUBMIT:</span></strong></div>
+                            <ol style="list-style-type: decimal;">
+                                <li><span>Take a screenshot of your VScode working space with <strong>env01.html editor open and your code visible</strong>. Add the screenshot to the PDF.</span></li>
+                                <li><span>Take a screenshot of your VScode working space with <strong>env.css </strong>editor open and your code visible. Add the screenshot to the PDF.</span></li>
+                                <li><span>Take a screenshot of your resulting page in Chrome. Add the screenshot to the PDF.</span></li>
+                            </ol>
+                            <p><span><strong><span style="background-color: #9242b4; color: #fbeeb8;">Wait, no example to follow? Yes, no example to follow!</span></strong> Here is my version, but that's only me. Do whatever you want to!</span></p>
+                            <p><span><img src="https://canvas.ucsc.edu/courses/92742/files/12474899/preview" alt="image.png" width="80%" height="80%" data-api-endpoint="https://canvas.ucsc.edu/api/v1/courses/92742/files/12474899" data-api-returntype="File" /></span></p>
+                            <p>&nbsp;</p>
+                            <h2>Task 2. Initiating the Environment</h2>
+                            <p>This task begins a longer series of creative programming experiments.</p>
+                            <p>Unlike the previous follow-along task, this one gives you <strong>general cues instead of detailed instructions</strong>. The goal is to give you room to experiment, play, break things, fix them, and discover new tricks along the way. That is a real part of programming and creative work.</p>
+                            <p><strong>Check the rubric:</strong> for this task, you will <strong>not</strong> be heavily penalized if something does not work perfectly or behaves strangely. The main point is to show <strong>self-guidance, experimentation, and project thinking</strong>.</p>
+                            <p><strong style="color: #9242b4;">Keep testing your page in Chrome as you work.</strong> Even if the page is incomplete, checking it often will help you notice what is changing.</p>
+                            <p><strong style="color: #027634;">Do not forget to save your files after every edit.</strong></p>
+                            <hr />
+                            <h3>1. Imagine your environment</h3>
+                            <p>Think about what kind of <strong>environment</strong> you want to develop in this series of tasks throughout the course.</p>
+                            <p>Your environment could be:</p>
+                            <ul>
+                                <li>a rainforest</li>
+                                <li>a Pok&eacute;mon universe</li>
+                                <li>yet another Star Wars spin-off</li>
+                                <li>the UCSC campus</li>
+                                <li>an abstract crystal dimension</li>
+                                <li>your inner world</li>
+                                <li>a horror story</li>
+                                <li>or something else entirely</li>
+                            </ul>
+                            <p>Brainstorm. Make doodles. Write a few notes. Or just choose the first strong idea that comes into your head.</p>
+                            <p><strong>The main point:</strong> this environment should feel interesting to <em>you</em>. It should make you curious, engaged, and excited to keep building it over time.</p>
+                            <p><strong>What is happening here:</strong> you are choosing the world that will guide your design choices, mood, visuals, and future experiments.</p>
+                            <hr />
+                            <h3>2. Create <code>env01.html</code></h3>
+                            <p>Inside the <code>environ/</code> folder of your main <code>ART101</code> project, create a new file named <code>env01.html</code>.</p>
+                            <p>Your folder should now look something like this:</p>
+                            <pre><code>ART101/
+    index.html
+    site.css
+    exercises/
+    environ/
+        env01.html</code></pre>
+                            <p><strong>What is happening here:</strong> <code>env01.html</code> will become the first webpage in your environment series.</p>
+                            <hr />
+                            <h3>3. Create <code>env.css</code></h3>
+                            <p>Inside the same <code>environ/</code> folder, create another file named <code>env.css</code>.</p>
+                            <p>Your folder should now look something like this:</p>
+                            <pre><code>ART101/
+    index.html
+    site.css
+    exercises/
+    environ/
+        env01.html
+        env.css</code></pre>
+                            <p><strong>What is happening here:</strong> <code>env.css</code> will control the visual style of your environment page.</p>
+                            <hr />
+                            <h3>4. Connect the HTML and CSS files</h3>
+                            <p>Use <code>env01.html</code> for your HTML content and <code>env.css</code> for your CSS styles.</p>
+                            <p>Your <code>env01.html</code> file should include a basic HTML structure and a link to <code>env.css</code>.</p>
+                            <p>For example:</p>
+                            <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Environment 01&lt;/title&gt;
+    &lt;link href="env.css" rel="stylesheet" type="text/css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                            <p><strong>What is happening here:</strong> the HTML file builds the page structure, and the CSS file controls how that structure looks.</p>
+                            <hr />
+                            <h3>5. Add a background that sets the mood</h3>
+                            <p>Create a background that establishes the feeling of your environment.</p>
+                            <p>This background can be:</p>
+                            <ul>
+                                <li>a color</li>
+                                <li>an image</li>
+                                <li>or a combination of both</li>
+                            </ul>
+                            <p>Try applying the background to the <code>body</code> tag so the entire page feels immersive.</p>
+                            <p>For example:</p>
+                            <ul>
+                                <li>a deep green color for a rainforest</li>
+                                <li>a star field image for a space setting</li>
+                                <li>a dark red or black background for a horror scene</li>
+                            </ul>
+                            <p><strong>What is happening here:</strong> the background creates the first emotional impression of your page.</p>
+                            <hr />
+                            <h3>6. Add a paragraph that introduces the environment</h3>
+                            <p>Add a paragraph of text that introduces visitors to this world.</p>
+                            <p>Make it feel narrative, atmospheric, or dramatic.</p>
+                            <p>For example, you could write something in the spirit of:</p>
+                            <p><em>A long time ago in a galaxy far, far away...</em></p>
+                            <p>But write your own version for your own environment.</p>
+                            <p><strong>What is happening here:</strong> this paragraph gives the viewer a sense of place, tone, and story.</p>
+                            <hr />
+                            <h3>7. Add the first character or object as an image</h3>
+                            <p>Add your first character, creature, object, or element of the world using the <code>&lt;img&gt;</code> HTML tag.</p>
+                            <p>This image might be:</p>
+                            <ul>
+                                <li>a person</li>
+                                <li>a monster</li>
+                                <li>a tree</li>
+                                <li>a spaceship</li>
+                                <li>a building</li>
+                                <li>an abstract object</li>
+                            </ul>
+                            <p>Place the image file in a location where your HTML file can find it, then connect it using the <code>src</code> attribute.</p>
+                            <p>For example:</p>
+                            <pre><code>&lt;img src="creature.png"&gt;</code></pre>
+                            <p><strong>Important:</strong> make sure the file name matches exactly, including the file extension such as <code>.jpg</code>, <code>.png</code>, or <code>.webp</code>.</p>
+                            <p><strong>What is happening here:</strong> you are introducing the first visible element inside your environment.</p>
+                            <hr />
+                            <h3>8. Put the pieces together</h3>
+                            <p>Your page should include at least these three ingredients:</p>
+                            <ul>
+                                <li>a background that sets the mood</li>
+                                <li>a paragraph that introduces the environment</li>
+                                <li>an image of the first character or object</li>
+                            </ul>
+                            <p>You may add more if you want, but these three parts are the minimum starting point.</p>
+                            <p><strong>What is happening here:</strong> you are building the first version of an original world that you will keep developing later.</p>
+                            <hr />
+                            <h3>9. Test your page in Chrome</h3>
+                            <p>Open <code>env01.html</code> in Chrome and check:</p>
+                            <ul>
+                                <li>Does the background appear?</li>
+                                <li>Does the paragraph show up?</li>
+                                <li>Does the image load correctly?</li>
+                                <li>Does the page create a clear mood or atmosphere?</li>
+                            </ul>
+                            <p>If something is missing, check:</p>
+                            <ul>
+                                <li>Did you save both <code>env01.html</code> and <code>env.css</code>?</li>
+                                <li>Did you link <code>env.css</code> correctly in the <code>&lt;head&gt;</code>?</li>
+                                <li>Is the image file name correct?</li>
+                                <li>Is the image file in the correct folder?</li>
+                            </ul>
+                            <hr />
+                            <p><strong style="color: #027634; background-color: #bfedd2;">WHAT TO SUBMIT</strong></p>
+                            <ol>
+                                <li>Take a screenshot of your VS Code workspace with <code>env01.html</code> open and your code visible. Add this screenshot to your PDF.</li>
+                                <li>Take a screenshot of your VS Code workspace with <code>env.css</code> open and your code visible. Add this screenshot to your PDF.</li>
+                                <li>Take a screenshot of your resulting page in Chrome. Add this screenshot to your PDF.</li>
+                            </ol>
+                            <hr />
+                            <p><strong style="background-color: #9242b4; color: #fbeeb8;">Wait, no example to follow? Yes, no example to follow.</strong></p>
+                            <p>That is intentional.</p>
+                            <p>This task is supposed to be more open. You are making choices on your own, and that is part of the assignment.</p>
+                            <p>There is no single correct result. Your environment can be strange, poetic, messy, funny, eerie, minimal, dramatic, cute, broken, or unexpected.</p>
+                            <p>Here is my version, but that is only <em>my</em> version. Make yours your own.</p>
+
+
+<h2>Task 2. Initiating the Environment</h2>
+
+<p>This task begins a longer series of creative programming experiments.</p>
+
+<p>Unlike the previous follow-along task, this one gives you <strong>general cues instead of detailed instructions</strong>. The goal is to give you room to experiment, play, break things, fix them, and discover new tricks along the way. That is a real part of programming and creative work.</p>
+
+<p><strong>Check the rubric:</strong> for this task, you will <strong>not</strong> be heavily penalized if something does not work perfectly or behaves strangely. The main point is to show <strong>self-guidance, experimentation, and project thinking</strong>.</p>
+
+<p><strong style="color: #9242b4;">Keep testing your page in Chrome as you work.</strong> Even if the page is incomplete, checking it often will help you notice what is changing.</p>
+
+<p><strong style="color: #027634;">Do not forget to save your files after every edit.</strong></p>
+
+<hr />
+
+<h3>1. Imagine your environment</h3>
+
+<p>Think about what kind of <strong>environment</strong> you want to develop in this series of tasks throughout the course.</p>
+
+<p>Your environment could be:</p>
+
+<ul>
+  <li>a rainforest</li>
+  <li>a Pokémon universe</li>
+  <li>yet another Star Wars spin-off</li>
+  <li>the UCSC campus</li>
+  <li>an abstract crystal dimension</li>
+  <li>your inner world</li>
+  <li>a horror story</li>
+  <li>or something else entirely</li>
+</ul>
+
+<p>Brainstorm. Make doodles. Write a few notes. Or just choose the first strong idea that comes into your head.</p>
+
+<p><strong>The main point:</strong> this environment should feel interesting to <em>you</em>. It should make you curious, engaged, and excited to keep building it over time.</p>
+
+<p><strong>What is happening here:</strong> you are choosing the world that will guide your design choices, mood, visuals, and future experiments.</p>
+
+<hr />
+
+<h3>2. Create your environment files</h3>
+
+<p>Inside your main <code>ART101</code> folder, create a folder named <code>environ</code> if it does not already exist.</p>
+
+<p>Inside <code>environ/</code>, create these two files:</p>
+
+<ul>
+  <li><code>env01.html</code></li>
+  <li><code>env.css</code></li>
+</ul>
+
+<p>Your folder structure should look something like this:</p>
+
+<pre><code>ART101/
+    index.html
+    site.css
+    exercises/
+    environ/
+        env01.html
+        env.css</code></pre>
+
+<p><strong>What is happening here:</strong> you are setting up a new mini-project inside your website for the first environment page and its styles.</p>
+
+<hr />
+
+<h3>3. Connect the HTML and CSS files</h3>
+
+<p>Use <code>env01.html</code> for your HTML content and <code>env.css</code> for your CSS styles.</p>
+
+<p>Your <code>env01.html</code> file should include a basic HTML structure and a link to <code>env.css</code>.</p>
+
+<p>For example:</p>
+
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Environment 01&lt;/title&gt;
+    &lt;link href="env.css" rel="stylesheet" type="text/css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p><strong>What is happening here:</strong> the HTML file builds the page structure, and the CSS file controls how that structure looks.</p>
+
+<hr />
+
+<h3>4. Add a background that sets the mood</h3>
+
+<p>Create a background that establishes the feeling of your environment.</p>
+
+<p>This background can be:</p>
+
+<ul>
+  <li>a color</li>
+  <li>an image</li>
+  <li>or a combination of both</li>
+</ul>
+
+<p>Try applying the background to the <code>body</code> tag so the entire page feels immersive.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>a deep green color for a rainforest</li>
+  <li>a star field image for a space setting</li>
+  <li>a dark red or black background for a horror scene</li>
+</ul>
+
+<p><strong>What is happening here:</strong> the background creates the first emotional impression of your page.</p>
+
+<hr />
+
+<h3>5. Add a paragraph that introduces the environment</h3>
+
+<p>Add a paragraph of text that introduces visitors to this world.</p>
+
+<p>Make it feel narrative, atmospheric, or dramatic.</p>
+
+<p>For example, you could write something in the spirit of:</p>
+
+<p><em>A long time ago in a galaxy far, far away...</em></p>
+
+<p>But write your own version for your own environment.</p>
+
+<p><strong>What is happening here:</strong> this paragraph gives the viewer a sense of place, tone, and story.</p>
+
+<hr />
+
+<h3>6. Add the first character or object as an image</h3>
+
+<p>Add your first character, creature, object, or element of the world using the <code>&lt;img&gt;</code> HTML tag.</p>
+
+<p>This image might be:</p>
+
+<ul>
+  <li>a person</li>
+  <li>a monster</li>
+  <li>a tree</li>
+  <li>a spaceship</li>
+  <li>a building</li>
+  <li>an abstract object</li>
+</ul>
+
+<p>Place the image file in a location where your HTML file can find it, then connect it using the <code>src</code> attribute.</p>
+
+<p>For example:</p>
+
+<pre><code>&lt;img src="creature.png"&gt;</code></pre>
+
+<p><strong>Important:</strong> make sure the file name matches exactly, including the file extension such as <code>.jpg</code>, <code>.png</code>, or <code>.webp</code>.</p>
+
+<p><strong>What is happening here:</strong> you are introducing the first visible element inside your environment.</p>
+
+<hr />
+
+<h3>7. Put the pieces together</h3>
+
+<p>Your page should include at least these three ingredients:</p>
+
+<ul>
+  <li>a background that sets the mood</li>
+  <li>a paragraph that introduces the environment</li>
+  <li>an image of the first character or object</li>
+</ul>
+
+<p>You may add more if you want, but these three parts are the minimum starting point.</p>
+
+<p><strong>What is happening here:</strong> you are building the first version of an original world that you will keep developing later.</p>
+
+<hr />
+
+<h3>8. Test your page in Chrome</h3>
+
+<p>Open <code>env01.html</code> in Chrome and check:</p>
+
+<ul>
+  <li>Does the background appear?</li>
+  <li>Does the paragraph show up?</li>
+  <li>Does the image load correctly?</li>
+  <li>Does the page create a clear mood or atmosphere?</li>
+</ul>
+
+<p>If something is missing, check:</p>
+
+<ul>
+  <li>Did you save both <code>env01.html</code> and <code>env.css</code>?</li>
+  <li>Did you link <code>env.css</code> correctly in the <code>&lt;head&gt;</code>?</li>
+  <li>Is the image file name correct?</li>
+  <li>Is the image file in the correct folder?</li>
+</ul>
+
+<hr />
+
+<p><strong style="color: #027634; background-color: #bfedd2;">WHAT TO SUBMIT</strong></p>
+
+<ol>
+  <li>Take a screenshot of your VS Code workspace with <code>env01.html</code> open and your code visible. Add this screenshot to your PDF.</li>
+  <li>Take a screenshot of your VS Code workspace with <code>env.css</code> open and your code visible. Add this screenshot to your PDF.</li>
+  <li>Take a screenshot of your resulting page in Chrome. Add this screenshot to your PDF.</li>
+</ol>
+
+<hr />
+
+<p><strong style="background-color: #9242b4; color: #fbeeb8;">Wait, no example to follow? Yes, no example to follow.</strong></p>
+
+<p>That is intentional.</p>
+
+<p>This task is supposed to be more open. You are making choices on your own, and that is part of the assignment.</p>
+
+<p>There is no single correct result. Your environment can be strange, poetic, messy, funny, eerie, minimal, dramatic, cute, broken, or unexpected.</p>
+
+<p>Here is my version, but that is only <em>my</em> version. Make yours your own.</p>
+
+
+                            <h3>Task 3: Self-Narration</h3>
+                            <p><span>For each assignment, I'm going to ask you to evaluate your own performance and to tell about your experience.&nbsp;<br /></span></p>
+                            <p><span>For this one, <strong>answer these questions:</strong></span></p>
+                            <ol style="list-style-type: decimal;">
+                                <li>Tell about challenges in Task 1</li>
+                                <li>For task 2, tell the whole story! What were your initial ideas? How did you try to implement them with html/css? What did go good, what didn't? How were you working with challenges and obstacles? How have your ideas change in the process? What do you want to do next?</li>
+                                <li>What was like your collaboration with the lab partner?</li>
+                            </ol>
+                            <p>&nbsp;Be concise and straightforward your self-narration. We don't expect the bloated "academic" or "professional" style here&mdash;we want to know how did it go for a fellow human.</p>
+                            <p><span style="color: #027634;"><strong>What to submit:</strong></span> add your answers and to a final PDF file.<br /><br /></p>
+                            <h3>Task 4: Self-Evaluation</h3>
+                            <p><strong>Evaluate your work</strong>. After you have submitted your pdf file, click "Self Assess" button in the right bottom corner of the page.<br />Your TA will use your self-evaluation as a starting point for their own.</p>
+                            <p><img src="https://canvas.ucsc.edu/courses/92742/files/12474903/preview" alt="image.png" width="261" height="194" data-api-endpoint="https://canvas.ucsc.edu/api/v1/courses/92742/files/12474903" data-api-returntype="File" /></p>
+                            <p>&nbsp;</p>
+                            <h2>The final submission</h2>
+                            <ol style="list-style-type: decimal;">
+                                <li>Create a text document in a software that will allow to export it as a PDF file. (Options: Google Docs, Google Slides, MS Word, Pages, Canva, Adobe Acrobat)</li>
+                                <li>Make a title page with course and lab names, date, yours and your lab partner names.</li>
+                                <li>Add all materials that are mentioned above as "What to submit"</li>
+                                <li>Maintain clear structure and user-friendly style in your document. Caption tasks, sub-tasks.</li>
+                                <li>Export/download a PDF file and submit into the field below.</li>
+                            </ol>
+                            <ul>
+                                <li class="p4">Pro-tips for a successful submission:</li>
+                                <ul>
+                                    <li class="p4">Turn it in on-time</li>
+                                    <li class="p4">Use complete sentences for your summary.</li>
+                                    <li class="p4">If you did not complete the lab, please provide a longer, more detailed summary.</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

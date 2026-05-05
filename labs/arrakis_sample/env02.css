@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #fff6de;
+  background-image:
+    linear-gradient(rgba(45, 20, 0, 0.18), rgba(45, 20, 0, 0.45)),
+    url("images/dunes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#page {
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#top-zone {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#scene-text {
+  max-width: 760px;
+  margin: 0 auto 20px auto;
+  padding: 14px 18px;
+  background: rgba(95, 42, 5, 0.45);
+  border: 1px solid rgba(255, 228, 170, 0.45);
+  line-height: 1.5;
+}
+
+#flygon {
+  width: 190px;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.45));
+}
+
+#main-zone {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px 0 20px 0;
+}
+
+.character-card {
+  width: 260px;
+  text-align: center;
+  padding: 18px;
+  background: rgba(82, 38, 8, 0.55);
+  border: 1px solid rgba(255, 222, 158, 0.45);
+  border-radius: 14px;
+  backdrop-filter: blur(1px);
+}
+
+.character-card p {
+  margin: 14px 0 0 0;
+  line-height: 1.4;
+}
+
+#sandshrew {
+  width: 150px;
+  image-rendering: pixelated;
+}
+
+#trapinch {
+  width: 150px;
+  image-rendering: pixelated;
+}
+
+#sandshrew-card {
+  margin-bottom: 30px;
+}
+
+#trapinch-card {
+  margin-top: 20px;
+}
