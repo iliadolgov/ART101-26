@@ -23,6 +23,7 @@ let duneWarnings = [
 ];
 
 let scanCount = 0;
+let flygonBubbleTimer;
 
 function changeTimeOfDay(timeInput) {
   let timeOfDay = timeInput.toLowerCase().trim();
@@ -52,6 +53,23 @@ $("#time-orb").click(function() {
   if (timeAnswer !== null) {
     changeTimeOfDay(timeAnswer);
   }
+});
+
+$("#flygon-area").mouseenter(function() {
+  let randomX = Math.floor(Math.random() * 121) - 60;
+  let randomY = Math.floor(Math.random() * 71) - 35;
+
+  $("#flygon-area").css("transform", "translate(" + randomX + "px, " + randomY + "px)");
+  $("#flygon-bubble").remove();
+  clearTimeout(flygonBubbleTimer);
+
+  $("#flygon-area").append("<div id='flygon-bubble'>you will not catch me</div>");
+
+  flygonBubbleTimer = setTimeout(function() {
+    $("#flygon-bubble").fadeOut(250, function() {
+      $(this).remove();
+    });
+  }, 2000);
 });
 
 $("#title-button").click(function() {

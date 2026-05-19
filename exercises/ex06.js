@@ -1,4 +1,5 @@
 
+console.log("JS is here");
 // declaring variables 
 
 let count = 0;
@@ -36,10 +37,10 @@ $("#Coral").click(function () {
 
 // what happens when the main button is clicked
 
-$("#needy-button").click(function () { 
- 
-count = count + 1;
 
+$("#needy-button").click(function () {
+ 
+console.log("the button was clicked");
 
 console.log("color count "+colorCount);
 
@@ -47,8 +48,6 @@ console.log("color count "+colorCount);
 
   paintPage( colors[colorCount] );
    
-
-
    if (colors[colorCount] == "HotPink") { 
         $("#needy-button").after(" notPink ");
     }
@@ -62,17 +61,22 @@ console.log("color count "+colorCount);
     if (count < 5) { mood="fresh and happy"; }
     else if ( count >= 5 && count < 10) {mood="keep pushing";}
     else { mood="so tired";}
+    
 
     makeImage("Orchid");
     makeImage("Plum");
     makeImage("Coral");
 
+    
+
     colorCount=colorCount+1;
+    count = count + 1;
    
     if (colorCount==4) { 
         colorCount=0;  
         console.log("it happened");
     }
+
 
     console.log(mood);
 

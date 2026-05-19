@@ -70,10 +70,33 @@ body.night {
   line-height: 1.5;
 }
 
+#flygon-area {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.28s ease;
+}
+
 #flygon {
   width: 190px;
   image-rendering: pixelated;
   filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.45));
+  cursor: pointer;
+}
+
+#flygon-bubble {
+  position: absolute;
+  left: 132px;
+  top: -14px;
+  max-width: 170px;
+  padding: 10px 13px;
+  color: #3b2107;
+  background: #fff8df;
+  border: 2px solid rgba(92, 45, 9, 0.85);
+  border-radius: 22px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.28);
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
 }
 
 #main-zone {
